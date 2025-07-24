@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+select, #random-toggle {
+  padding: 8px 12px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+#word-display {
+  font-size: 2em;
+  letter-spacing: 10px;
+  margin: 15px 0;
+}
+
+#keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.key {
+  width: 48px;
+  height: 48px;
+  margin: 5px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: 2px solid #bbb;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.key.correct {
+  background-color: #c8e6c9;
+}
+
+.key.wrong {
+  background-color: #ffcdd2;
+}
+
+#video-container {
+  margin-top: 20px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reward-video {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#controls {
+  margin-top: 20px;
+}
+
+#reset-btn {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  background-color: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .key {
+    width: 42px;
+    height: 42px;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #word-display {
+    font-size: 1.6em;
+  }
+}
+ 
+.hidden {
+  display: none !important;
+}

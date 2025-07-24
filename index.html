@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spell the Word Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Spell the Word</h1>
+
+  <select id="word-select"></select>
+  <button id="random-toggle">🔀 Random: Off</button>
+
+  <div id="word-display"></div>
+  <div id="keyboard"></div>
+
+  <div id="controls">
+    <button id="reset-btn" class="hidden">🔁 Try Again</button>
+  </div>
+
+  <div id="video-container" class="hidden">
+    <video id="reward-video" controls autoplay playsinline>
+      <source id="video-source" src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <audio id="sound-click" src="sounds/click.mp3"></audio>
+  <audio id="sound-correct" src="sounds/correct.mp3"></audio>
+  <audio id="sound-wrong" src="sounds/wrong.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
